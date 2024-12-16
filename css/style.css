@@ -1,0 +1,1688 @@
+*{
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*----------------------header section----------------------*/
+
+
+
+
+/* Desktop Navigation Styles */
+header {
+    background-color: rgb(203, 213, 188);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+#logo {
+    height: 100px;
+    width: auto;
+    margin: 10px;
+}
+
+.menu-toggle, .menu-icon {
+    display: none;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes scaleUp {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+
+/* Fade-in effect for containers */
+.container-main,
+.section-matara,
+.section-two {
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Fade-in animation over 1 second */
+}
+
+/* Hover effect for images */
+img {
+    transition: transform 0.3s ease-in-out; /* Smooth transformation on hover */
+}
+
+img:hover {
+    transform: scale(1.05); /* Slightly zooms the image on hover */
+}
+
+/* Hover effect for submit button */
+#submit-button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#submit-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly zooms the button on hover */
+}
+
+/* Slide-in animation for table rows */
+.table-branch tr {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Delayed animation for each table row */
+.table-branch tr:nth-child(1) { animation-delay: 0.1s; }
+.table-branch tr:nth-child(2) { animation-delay: 0.2s; }
+.table-branch tr:nth-child(3) { animation-delay: 0.3s; }
+
+/* Logo animation */
+#logo {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Main heading slide in */
+.intro-hed {
+    font-size: 60px;
+
+    justify-content: center;
+    padding-left: 280px;
+    padding-top: 50px;
+    animation: slideInLeft 2s ease-out;
+}
+
+/* Navigation links hover effect */
+nav a {
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color:rgb(173, 183, 155); /* Change to preferred color */
+}
+
+/* Image scale effect on hover */
+.con-img, .service-img, .contact-img {
+    transition: transform 0.3s ease;
+}
+
+.con-img:hover, .service-img:hover, .contact-img:hover {
+    transform: scale(1.1);
+}
+
+/* Section headings fade-in on scroll */
+.about-section h2, .service-section h2, .contact-section h2 {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Background zoom-in effect */
+@keyframes zoomIn {
+    from { background-size: 110%; }
+    to { background-size: 100%; }
+}
+
+.container-consulting {
+    animation: zoomIn 10s infinite alternate; /* Zoom-in effect with smooth transition */
+}
+
+
+
+
+
+/*--------------------Home pg-----------------------*/
+/*home pg main container*/
+.container-hero{
+    width: 100%;
+    height: 300px; 
+    background-image: url('../image/home\ image\ \(2\).webp');
+    background-size: cover; /* scales the image to cover the entire container */
+    background-position: center;
+    padding-bottom:100px;
+}
+/*home pg intro-hed*/
+.intro-hed{
+    font-size: 60px;
+    justify-content: center;
+    padding-left: 280px;
+    padding-top: 50px;
+    
+
+}
+
+/*home pg slogan*/
+.slogan{
+    font-size: 30px;
+    padding-left: 450px;
+}
+/*home pg intro-para*/
+.intro-para{
+    
+    padding-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold; /* Bold for emphasis */
+    color: #333; /* Darker color for better readability */
+    background-color:#FFFFFF80; /* Light background for contrast */
+    padding: 20px; 
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to make it stand out */
+
+}
+/*home pg about us area*/
+
+.about-section{
+    background-color: #f2f2f2;
+    width: 97%;
+    padding: 20px;
+    
+    
+
+}
+/*homepg about us h2*/
+.about-section h2{
+   
+    text-align: center;
+    padding-left: 555px;
+    margin-bottom: 20px;
+
+}
+/*home page about us container*/
+.about-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;/* Adds space between image and text */
+
+}
+/*home pg about us img*/
+.con-img{
+
+    width: 35%;
+    height: 200px;
+    border-radius: 8px; 
+    padding-left: 50px;
+    padding-top: 50px;
+}
+/*home pg about us para*/
+.about-section p{
+   
+    padding-bottom: 200px;
+    max-width: 50%;/* paragraph takes half of the container */
+    line-height: 1.6;  /*Adds better readability to the paragraph */
+    padding-top: 50px;
+    
+    
+    
+}
+
+/*home pg services*/
+.service-section{
+    background-color: #f2f2f2;
+    width: 97%;
+    padding: 20px;
+}
+/*home pg service area container*/
+.service-content {
+    display: flex;
+    align-items: center; /* Aligns the text and image vertically */
+    justify-content: space-between; /* Creates space between the image and text */
+    
+}
+/*home pg service area img*/
+.service-img {
+    max-width: 500px; /* Sets a fixed width for the image */
+    height: auto;
+    border-radius: 8px; /* Adds rounded corners to the image */
+}
+/*home pg service area para*/
+.service-section p{
+    max-width: 600px; /* Limits the width of the text */
+    text-align: justify; /*  text is aligned  */
+    
+}
+
+/*home pg service area header*/
+.service-section h2 {
+    text-align: center;
+    padding-left: 555px;
+    margin-bottom: 20px;
+}
+/*home pg contact us section*/
+
+.contact-section{
+    background-color: #f2f2f2;
+    width: 97%;
+    padding: 20px;
+}
+/*home pg contact us container*/
+
+.contact-content {
+    display: flex;
+    align-items: center; /* Aligns the text and image vertically */
+    justify-content: space-between; /* Creates space between the image and text */
+    gap: 30px; /* Adds space between the image and the text */
+    max-width: 1200px; /* Sets the maximum width for the container */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px;
+}
+/*home pg contact us image*/
+
+.contact-img {
+    max-width: 500px; /* Sets a fixed width for the image */
+    height: auto;
+    border-radius: 8px; /* Adds rounded corners to the image */
+}
+
+/*home pg contact us para*/
+
+.contact-section p{
+    max-width: 600px; /* Limits the width of the text */
+    text-align: justify; /* text is aligned  */
+}
+
+
+
+/*home pg contact us h2*/
+.contact-section h2 {
+    text-align: center;
+    padding-left: 555px;
+    margin-bottom: 20px;
+}
+/*footer section*/
+footer {
+    display: flex; /* Aligns the children (logo, social media, contacts) horizontally */
+    justify-content: space-between; /* Adds equal space between each item */
+    align-items: center; /* Aligns items vertically in the center */
+    padding: 20px;
+    background-color: #f4f4f4; /* Example background color for the footer */
+    border-top: 1px solid #ccc; /* Optional border to define the footer */
+}
+
+
+
+
+
+/*--------------------------------------media queries for home pg max width 600px-----------------------------------------------*/
+
+/* Responsive Styles for max-width 600px */
+
+/* General adjustments for mobile */
+@media (max-width: 600px) {
+    /* Header adjustments */
+    header {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    #logo {
+        width: 100%; /* Adjusted height for smaller screens */
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        margin-right: 20px;
+        align-self: flex-end;
+        padding-bottom: 100px;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu-toggle:checked + .menu-icon + nav {
+        display: flex;
+    }
+
+    nav a {
+        margin: 10px 0;
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(203, 213, 188);
+    }
+     .container-hero,.about-section, .service-section, .contact-section {
+        width: 100%; /* Ensure containers use full width of the viewport */
+    
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        
+      
+    }
+    .main-header{
+        width:100%;
+        box-sizing: border-box;
+        padding: 5px;
+    }
+    #logo{
+        width: 100px;
+    }
+    /* Main content adjustments */
+    .intro-hed {
+        font-size: 40px; /* Reduced font size */
+        padding-left: 20px; /* Adjusted padding */
+        padding-top: 20px;
+    }
+
+    .slogan {
+        font-size: 20px; /* Reduced font size */
+        padding-left: 180px;
+        color: #0c0d0d;
+        font-weight: bold;
+    }
+
+    .intro-para {
+        padding: 10px; /* Reduced padding */
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .about-content, .service-content, .contact-content {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;
+        padding: 10px;
+        
+    }
+
+    .con-img, .service-img, .contact-img {
+        width: 50%; /* Ensure images fit the screen width */
+        height: auto; /* Maintain aspect ratio */
+        padding-right: 10px;
+    }
+    .about-section h2 , .service-section h2, .contact-section h2 {
+        /*max-width: 100%; Ensure text width fits within container */
+        padding-left:100px ; /* Adjusted padding */
+        padding-right: 80px;
+        padding-top: 60px;
+    }
+
+     .service-section p, .contact-section p {
+        max-width: 100%; /* Ensure text width fits within container */
+        padding: 10px; /* Adjusted padding */
+        justify-content: center;
+    }
+    .about-section p{
+        max-width: 100%;
+        padding: 10px;
+        justify-content: center;
+    }
+    .foot-logo{
+        width:50px;
+    }
+    footer {
+        padding: 5px; /* Reduced padding for a more compact look */
+        display: flex; /* Align items in a row */
+        flex-wrap: wrap; /* Allow wrapping if needed */
+        justify-content: space-between; /* Space items evenly */
+        align-items: center; /* Center items vertically */
+    }
+
+    /* Ensure logo fits well */
+    .foot-logo {
+        max-width: 100px; /* Adjusted size for smaller screens */
+    }
+
+    /* Align icons and network contact in one row */
+    footer div {
+        display: flex; /* Align items horizontally */
+        align-items: center;
+        margin: 0; /* Remove margins */
+        flex: 1; /* Allow items to grow and fill space */
+        justify-content: center; /* Center align items horizontally */
+    }
+
+    /* Reduce space between social media icons */
+    footer div:nth-child(2) a {
+        margin-right: 10px; /* Reduced margin between icons */
+    }
+
+    /* Adjust heading size and margin */
+    footer div h3 {
+        margin-right: 10px; /* Reduced margin */
+        font-size: 14px; /* Adjusted font size */
+        font-weight: bold;
+    }
+
+    /* Contact details list styles */
+    footer ul {
+        padding: 0;
+        margin: 0;
+        display: flex; /* Align list items in a row */
+        flex-wrap: wrap; /* Allow wrapping if needed */
+        justify-content: center; /* Center align items horizontally */
+    }
+
+    footer ul li {
+        font-size: 12px; /* Reduced font size for smaller screens */
+        margin-right: 10px; /* Reduced margin between list items */
+    }
+}
+
+
+
+
+
+.foot-logo {
+    max-width: 150px; /* Restricts the size of the logo */
+}
+
+footer div {
+    display: flex; /* Ensures each section of the footer (logo, icons, contacts) aligns its items horizontally */
+    align-items: center;
+}
+
+footer div:nth-child(2) a {
+    margin-right: 60px; /* Adds space between each social media icon */
+    padding-left: 40px;
+}
+
+footer div h3 {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer ul {
+    list-style-type: none; /* Removes bullet points from the list */
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    font-size: 16px; /* Controls the font size of the contact details */
+}
+
+
+/*--------------about us page--------------*/
+/*about us pg*/
+.container-main{
+    width: 100%;
+    height: 300px; /* Or any height you prefer */
+    background-image: url('../image/hospitalb.webp');
+    background-size: cover; /* Optional: scales the image to cover the entire container */
+    background-position: center;
+    padding-bottom:100px;
+
+}
+.container-main h1{
+    font-size: 60px;
+    justify-content: center;
+    padding-left: 160px;
+    padding-top: 70px;
+    
+}
+.container-main p{
+    padding-top: 60px;
+    text-align: center;
+    font-size:18px;
+    font-weight: 100;
+    line-height: 1.4;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold; /* Bold for emphasis */
+    color: #333; /* Darker color for better readability */
+    background-color:#FFFFFF80; /* Light background for contrast */
+    padding: 20px; /* Add more padding for better visibility */
+    border-radius: 8px; /*  Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to make it stand out */
+
+    
+
+}
+
+
+.section-matara{
+    background-color: #f2f2f2;
+    width: 97%;
+    padding: 20px;
+    
+    
+
+}
+/*homepg about us h2*/
+.section-matara h2{
+   /* padding-left: 500px;
+    padding-top: 40px;*/
+    text-align: center;
+    padding-left: 555px;
+    padding-top:20px;
+    margin-bottom: 20px;
+    
+
+}
+.container-matara{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;/* Adds space between image and text */
+
+}
+/* about us matara img*/
+.matara{
+
+    width: 500px;
+    height: auto;
+    border-radius: 8px; 
+}
+/*about pg matara para*/
+.section-matara p{
+
+    padding-bottom: 200px;
+    max-width: 50%;/*Makes sure the paragraph takes half of the container */
+    line-height: 1.6;  /*Adds better readability to the paragraph */
+    padding-top: 100px;
+    padding-right: 20px;
+    text-align: center;
+    
+}
+
+
+    
+    
+
+
+.section-two{
+    background-color: #f2f2f2;
+    width: 97%;
+    padding: 20px;
+    
+    
+
+}
+/*homepg about us h2*/
+.section-two h2{
+   
+    text-align: center;
+    padding-left: 555px;
+    padding-top:20px;
+    margin-bottom: 20px;
+    
+
+}
+.container-kandy{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;/* Adds space between image and text */
+
+}
+/* about us matara img*/
+.Kandy{
+
+    width: 500px;
+    height: auto;
+    border-radius: 8px; 
+}
+/*about pg matara para*/
+.section-two p{
+   /* padding-left: 700px;*/
+    padding-bottom: 200px;
+    max-width: 50%;/*Makes sure the paragraph takes half of the container */
+    line-height: 1.6;  /*Adds better readability to the paragraph */
+    padding-top: 100px;
+    padding-right: 20px;
+    text-align: center;
+    
+}
+
+
+    
+
+
+
+.table-branch{
+    border: 2px;
+}
+table {
+    border-collapse: collapse; /* Ensures the borders are not doubled */
+    width: 90%; /* Optional: Makes the table take up 100% of its container */
+    margin-left: 60px;
+}
+
+th, td {
+    border: 1px solid black; /* Adds a border to table cells */
+    padding: 10px; /* Adds padding inside cells */
+    text-align: center; /* Aligns text to the left */
+}
+
+th {
+    background-color: white; /* Optional: Adds a background color to header cells */
+}
+.summerimg{
+    width: 200px;
+    height: auto;
+    
+}
+/*----------------------------------------media quires about us pg-----------------*/
+@media (max-width: 600px) {
+    .container-main {
+        height: auto; /* Adjust height for better responsiveness */
+        padding-bottom: 50px; /* Reduced padding for smaller screens */
+        background-size: contain; /* Adjust background image scaling */
+        width: 100%;
+    }
+    
+    .container-main h1 {
+        font-size: 36px; /* Smaller font size for smaller screens */
+        padding-left: 20px; /* Reduced padding for smaller screens */
+        padding-top: 30px; /* Reduced padding for smaller screens */
+        text-align: center; /* Center align for better fit */
+    }
+    
+    .container-main p {
+        font-size: 14px; /* Consistent font size for readability */
+        padding-top: 20px; /* Adjusted padding for smaller screens */
+        padding-left: 10px; /* Adjusted padding for smaller screens */
+        padding-right: 10px; /* Adjusted padding for smaller screens */
+        background-color: #FFFFFF80; /* Maintains contrast */
+    }
+    
+    .section-matara, .section-two {
+        width: 97%; /* Full width for smaller screens */
+
+      padding-left: 0px;
+    }
+
+    .section-matara h2, .section-two h2 {
+        padding-left: 0; /* Remove left padding */
+        padding-top: 10px; /* Reduced top padding */
+    }
+
+    .container-matara, .container-kandy {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        justify-content: center; /* Center items */
+    
+        
+    }
+
+    .matara, .Kandy {
+        width: 50%; /* Full width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        padding-right: 20px;
+    }
+
+    .section-matara p, .section-two p {
+        padding-top: 20px; /* Reduced padding for better fit */
+        padding-right: 10px; /* Reduced padding */
+        max-width: 100%; /* Full width for smaller screens */
+        text-align: center; /* Center align text */
+        padding-right: 10px;
+    }
+    .section-matara iframe,.section-two iframe{
+        width: 100%;
+        padding-right: 50px;
+    }
+    .table-branch{
+        margin: 0 auto; /* Centers the table horizontally */
+        width: 90%; /* Adjust the width as needed to fit within the container */
+        max-width: 100%; /* Ensures the table doesn't exceed the container's width */
+    }
+}
+
+/*----------service pg styles------------*/
+.container-services{
+    width: 100%;
+    height: 300px; /* Or any height you prefer */
+    background-size: cover; /* Optional: scales the image to cover the entire container */
+    background-position: center;
+    padding-bottom:100px;
+    background-image: url('../image/servicebck.webp');
+
+}
+.container-services h1{
+    font-size: 60px;
+    justify-content: center;
+    padding-left: 550px;
+    padding-top: 100px;
+    padding-top: 50px;
+    text-align: center;
+    
+    font-weight: bold; /* Bold for emphasis */
+    color: #333; /* Darker color for better readability */
+    background-color:#FFFFFF80; /* Light background for contrast */
+    padding: 20px; /* Add more padding for better visibility */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to make it stand out */
+}
+.container-services p{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+}
+.services-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+    justify-content: space-between; /* Even spacing between items */
+    gap: 20px; /* Spacing between service items */
+    padding: 20px;
+}
+.container-serve{
+    display:flex;
+    flex-direction: row;
+}
+
+.service-item {
+    flex: 1 1 calc(25% - 20px); /* Each service takes about 25% of the container width */
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* Hover effect for each service */
+}
+
+.service-image {
+    width: 100%; /* Images take the full width of the container */
+    height: auto;
+    border-radius: 10px;
+}
+.container-serv{
+    display: flex;                 /* Using flexbox for layout */
+    flex-direction: row;        /* Images stacked vertically (column) on smaller screens */
+    align-items: center;           /* Centers the images horizontally */
+    gap: 20px;                     /* Adds space between images */
+}
+.container-serv img{
+    width: 50%;                   /* Makes the images responsive */
+    max-width: 300px;              /* Limits the maximum width of each image*/ 
+    height: auto;                  /* Maintains the image's aspect ratio */
+}
+
+
+#services_page_section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+    text-align: center; /* Centers the text within the elements */
+    margin: 0 auto;
+    max-width: 80%; /* Limits the width for better readability */
+}
+
+#services_page_section1 h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#services_paragraph {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center; /* Centers the paragraph text */
+}
+
+
+.con-ser {
+    display: flex;
+    gap: 20px; /* Space between the image and content */
+    align-items: flex-start; /* Aligns items to the top of the container */
+}
+
+.patient-regestration-imge {
+    max-width: 40%; /* Image size */
+    height: auto;
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Stacks h2, p, and button vertically */
+    justify-content: flex-start; /* Aligns content at the top */
+    max-width: 55%; /* Adjust width as needed */
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-ser {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn-ser:hover {
+    background-color: #0056b3;
+}
+/*---------------------------------mobile queries services pg----------------------------*/
+@media (max-width: 600px) {
+    .container-services {
+        height: auto; /* Adjust height to auto for better fit on smaller screens */
+        padding-bottom: 50px; /* Reduce padding at the bottom */
+        background-size: cover; /* Keep background image cover */
+        background-position: center;
+        background-image: url('../image/servicebck.webp');
+        width: 100%;
+    }
+
+    .container-services h1 {
+        font-size: 36px; /* Smaller font size for better fit */
+        padding-left: 20px; /* Reduce padding on left */
+        padding-top: 20px; /* Adjust top padding */
+        
+        text-align: center; /* Center align text */
+        background-color: #FFFFFF80; /* Maintain background color */
+        padding: 10px; /* Adjust padding */
+        border-radius: 8px; /* Keep rounded corners */
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Reduce shadow for smaller screens */
+    }
+
+    .container-services p {
+        font-size: 14px; /* Smaller font size */
+        padding-top: 20px; /* Adjust top padding */
+        color: #ccc;
+        font-weight: bold;
+        font-family: arial;
+    }
+
+    .services-container {
+        padding: 10px; /* Reduce padding */
+        width:100%;
+    }
+
+    .service-item {
+        flex: 1 1 calc(100% - 20px); /* Each item takes full width minus gap */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .service-item:hover {
+        transform: none; /* Remove hover effect for smaller screens */
+    }
+
+    .container-serv {
+        flex-direction: column; /* Stack images vertically */
+        gap: 10px; /* Reduce gap between images */
+    }
+
+    .container-serv img {
+        width: 100%; /* Make images responsive */
+        max-width: 100%; /* Adjust max-width */
+    }
+
+    #services_page_section1 {
+        max-width: 100%; /* Full width on smaller screens */
+        padding: 0 10px; /* Add padding for better spacing */
+    }
+
+    #services_page_section1 h2 {
+        font-size: 20px; /* Smaller font size */
+        width: 100%;
+    }
+
+    #services_paragraph {
+        font-size: 14px; /* Smaller font size */
+        line-height: 1.6;
+    }
+
+    .con-ser {
+        flex-direction: column; /* Stack image and content vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .patient-regestration-imge {
+        max-width: 100%; /* Full width for image */
+    }
+
+    .content {
+        max-width: 100%; /* Full width for content */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    p {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .btn-ser {
+        font-size: 14px; /* Adjust button font size */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+
+
+/*---------------pharmacy pg--------------*/
+.container-pharmacy{
+    background-image: url('../image/pharmacybk.webp');
+    width: 100%;
+    height: 300px; 
+    background-size: cover; /* scales the image to cover the entire container */
+    background-position: center;
+    padding-bottom:100px;
+
+}
+.container-pharmacy h1{
+    font-size: 60px;
+    justify-content: center;
+    padding-left: 500px;
+    padding-top: 150px;
+}
+.container-pharmacy p{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    font-weight: bold; /* Bold for emphasis */
+    color: #333; /* Darker color for better readability */
+    background-color:#FFFFFF80; /* Light background for contrast */
+    padding: 20px; /* Add more padding for better visibility */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to make it stand out */
+}
+
+
+/* Style for the form container */
+.container-pharform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px ; /* Reduced padding for a more compact layout */
+    background-color: #f4f4f4;
+    width:95%;
+}
+
+/* Style for the pharmacy order form */
+#sampleform {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 100%;
+}
+
+/* Style for form fields */
+#sampleform label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#sampleform input,
+#sampleform select,
+#sampleform textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#sampleform textarea {
+    height: 100px;
+}
+
+/* Submit button style */
+#submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #0056b3;
+}
+/*----------------------------------------media quires  pharmacy pg--------------------*/
+@media (max-width: 600px) {
+    .container-pharmacy {
+        height: 200px; /* Adjust height for smaller screens */
+        padding-bottom: 50px; /* Adjust bottom padding */
+        width: 100%;
+    }
+
+    .container-pharmacy h1 {
+        font-size: 36px; /* Smaller font size for smaller screens */
+        padding-left: 20px; /* Adjust padding */
+        padding-top: 80px; /* Adjust padding */
+        text-align: center; /* Center align heading */
+    }
+
+    .container-pharmacy p {
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .container-pharform {
+        padding: 20px; /* Adjust padding */
+        width: 93%;
+    }
+
+    #sampleform {
+        width: 100%; /* Full width on small screens */
+        padding: 15px; /* Adjust padding */
+    }
+
+    #sampleform label {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    #sampleform input,
+    #sampleform select,
+    #sampleform textarea {
+        padding: 8px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    #sampleform textarea {
+        height: 80px; /* Adjust height */
+    }
+
+    #submit-button {
+        padding: 8px 12px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+/*------------------consultin pg style----------------------*/
+.container-consulting{
+    background-image: url('../image/ai-generated-8881553_1280.webp');
+    width: 100%;
+    height: 300px; /* Or any height you prefer */
+    background-size: cover; /* Optional: scales the image to cover the entire container */
+    background-position: center;
+    padding-bottom:100px;
+}
+.container-consulting h1{
+    font-size: 60px;
+    justify-content: center;
+    padding-left: 300px;
+    padding-top: 180px;
+}
+.container-consulting p{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    font-weight: bold; /* Bold for emphasis */
+    color: #333; /* Darker color for better readability */
+    background-color:#FFFFFF80; /* Light background for contrast */
+    padding: 20px; /* Add more padding for better visibility */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to make it stand out */
+}
+
+
+/* Container for the form */
+.container-conform {
+    display: flex;
+    justify-content: center; /* Horizontally center the form */
+    align-items: center;     /* Vertically center the form */
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+/* Form styling */
+#consultingForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Limit the form width */
+}
+
+/* Fieldset and legend styling */
+#consultingForm fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#consultingForm legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+#consultingForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input, select, and textarea styling */
+#consultingForm input[type="text"],
+#consultingForm input[type="date"],
+#consultingForm input[type="tel"],
+#consultingForm input[type="email"],
+#consultingForm input[type="time"],
+#consultingForm select,
+#consultingForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+
+#consultingForm textarea {
+    min-height: 100px;
+}
+
+/* Submit button styling */
+#consultingForm button[type="submit"] {
+    background-color: #00796b;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#consultingForm button[type="submit"]:hover {
+    background-color: #004d40;
+}
+/*-------------------------------------media quires consult pg--------------------------------*/
+@media (max-width: 600px) {
+    .container-consulting {
+        height: 200px; /* Adjust height for smaller screens */
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+    .container-consulting h1 {
+        font-size: 36px; /* Smaller font size for smaller screens */
+        padding-left: 20px; /* Adjust padding */
+        padding-top: 120px; /* Adjust padding */
+        text-align: center; /* Center align heading */
+    }
+
+    .container-consulting p {
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .container-conform {
+        padding: 20px; /* Adjust padding */
+    
+    }
+
+    #consultingForm {
+        max-width: 100%; /* Full width on small screens */
+        padding: 10px; /* Adjust padding */
+    }
+
+    #consultingForm fieldset {
+        padding: 15px; /* Adjust padding */
+    }
+
+    #consultingForm legend {
+        font-size: 1.2em; /* Smaller font size */
+    }
+
+    #consultingForm label {
+        font-size: 0.9em; /* Adjust font size */
+    }
+
+    #consultingForm input[type="text"],
+    #consultingForm input[type="date"],
+    #consultingForm input[type="tel"],
+    #consultingForm input[type="email"],
+    #consultingForm input[type="time"],
+    #consultingForm select,
+    #consultingForm textarea {
+        padding: 8px; /* Adjust padding */
+        font-size: 0.9em; /* Adjust font size */
+    }
+
+    #consultingForm textarea {
+        min-height: 80px; /* Adjust minimum height */
+    }
+
+    #consultingForm button[type="submit"] {
+        padding: 10px; /* Adjust padding */
+        font-size: 1em; /* Adjust font size */
+    }
+}
+/*--------------patient pg----------------*/
+.container-patient{
+   background-image: url('../image/patieb.webp');
+   width: 100%;
+   height: 300px; /* Or any height you prefer */
+   background-size: cover; /* Optional: scales the image to cover the entire container */
+   background-position: center;
+   padding-bottom:100px;
+}
+.container-patient h1{
+    font-size: 60px;
+    justify-content: center;
+    padding-left: 320px;
+    padding-top: 130px;
+}
+.container-patient p{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    font-weight: bold; /* Bold for emphasis */
+    color: #333; /* Darker color for better readability */
+    background-color:#FFFFFF80; /* Light background for contrast */
+    padding: 20px; /* Add more padding for better visibility */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to make it stand out */
+}
+/* Container styling */
+.containerpat {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+fieldset {
+    border: 2px solid #007BFF;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+#submitbtn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitbtn:hover {
+    background-color: #0056b3;
+}
+/*--------------------------------media quires patient form------------------------------*/
+@media (max-width: 600px) {
+    .container-patient {
+        height: auto; /* Adjust height to fit content */
+        background-image: url('../image/patientrg.webp'); /* Optional: Use a different image for smaller screens */
+        background-size: cover; /* Keep image scaling */
+        background-position: center;
+        padding-bottom: 50px; /* Reduce padding */
+        width: 100%;
+    }
+
+    .container-patient h1 {
+        font-size: 36px; /* Reduce font size */
+        padding-left: 20px; /* Reduce left padding */
+        padding-top: 50px; /* Reduce top padding */
+        text-align: center; /* Center-align text */
+    }
+
+    .container-patient p {
+        padding: 10px; /* Reduce padding */
+        font-size: 14px; /* Reduce font size */
+        font-weight: normal; /* Remove bold weight */
+        background-color: #FFFFFF90; /* Slightly more transparent background */
+    }
+
+    .containerpat {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px; /* Reduce padding */
+        
+    }
+
+    form {
+        padding: 15px; /* Reduce padding */
+        max-width: 90%; /* Full width on small screens */
+    }
+
+    fieldset {
+        padding: 10px; /* Reduce padding */
+    }
+
+    legend {
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    label {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="tel"],
+    textarea {
+        padding: 8px; /* Reduce padding */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    #submitbtn {
+        padding: 8px 16px; /* Adjust padding */
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+/*-------------------doctors pg----------------*/
+.container-doctor{
+    background-image: url('../image/docb.webp');
+    width: 100%;
+    height: 300px; /* Or any height you prefer */
+    background-size: cover; /* Optional: scales the image to cover the entire container */
+    background-position: center;
+    padding-bottom:100px;
+}
+.container-doctor h1{
+    font-size: 60px;
+    justify-content: center;
+    padding-left: 520px;
+    padding-top: 100px;
+    
+}
+.container-doctor p{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    font-weight: bold; /* Bold for emphasis */
+    color: #333; /* Darker color for better readability */
+    background-color:#FFFFFF80; /* Light background for contrast */
+    padding: 20px; /* Add more padding for better visibility */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to make it stand out */
+}
+.container-doc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+}
+
+
+/* Container for doctor items */
+.container-doc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+    width: 100%; /* Ensures it takes full width of the screen */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.container-doc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+}
+
+.item img {
+    width: 30%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio and fills the container */
+    border-radius: 10px;
+}
+
+h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+h4 {
+    font-size: 1em;
+    color: #777;
+}
+/*---------------------------------mobile queries doctors pg----------------------------*/
+@media (max-width: 600px) {
+    .container-doctor {
+        height: auto; /* Adjust height to fit content */
+        background-image: url('../image/docb.webp'); /* Optional: Use a different image for smaller screens */
+        padding-bottom: 50px; /* Reduce padding */
+        background-size: cover; /* Keep image scaling */
+        background-position: center;
+        width: 100%;
+    }
+
+    .container-doctor h1 {
+        font-size: 36px; /* Reduce font size */
+        padding-left: 20px; /* Reduce left padding */
+        padding-top: 10px; /* Reduce top padding */
+        text-align: center; /* Center-align text */
+    }
+
+    .container-doctor p {
+        padding: 10px; /* Reduce padding */
+        font-size: 14px; /* Reduce font size */
+        font-weight: normal; /* Remove bold weight */
+        background-color: #FFFFFF90; /* Slightly more transparent background */
+    }
+
+    .container-doc {
+        grid-template-columns: 1fr; /* Single column layout */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .item {
+        padding: 10px; /* Reduce padding */
+        text-align: center; /* Center text */
+    }
+
+    .item img {
+        width: 20%; /* Full width */
+        height: auto; /* Adjust height to maintain aspect ratio */
+    }
+
+    h3 {
+        font-size: 1.1em; /* Adjust font size */
+    }
+
+    h4 {
+        font-size: 0.9em; /* Adjust font size */
+    }
+}
+
+/*-----------------contact us pg-----------------*/
+.container-contact{
+    background-image: url('../image/ai-generated-8685102_1280.webp');
+    width: 100%;
+    height: 300px; /* Or any height you prefer */
+    background-size: cover; /*  scales the image to cover the entire container */
+    background-position: center;
+    padding-bottom:100px; 
+}
+.container-contact h1{
+    font-size: 60px;
+    justify-content: center;
+    padding-left: 300px;
+    padding-top: 230px;
+}
+.container-contact p{
+    padding-top: 20px;
+    padding-bottom: 70px;
+    padding-right: 70px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    font-weight: bold; /* Bold for emphasis */
+    color: #333; /* Darker color for better readability */
+    background-color:#FFFFFF80; /* Light background for contrast */
+    padding: 20px; /* Add more padding for better visibility */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow to make it stand out */
+}
+.container-sect{
+    background-color: #f2f2f2;
+    width: 97%;
+    padding: 20px;
+
+}
+.container-sect h2{
+    text-align: center;
+    padding-left: 555px;
+    margin-bottom: 20px;
+
+}
+.container-sect p{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 100;
+}
+.contact-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;/* Adds space between image and text */
+
+}
+.cont-img{
+    padding-top:80px;
+    padding-left: 30px;
+    width: 40%;
+    height: auto;
+    border-radius: 8px; 
+}
+/*---------------------media quaries contact pg-------------------*/
+@media (max-width: 600px) {
+    .container-contact {
+        height: 200px; /* Adjust height for smaller screens */
+        padding-bottom: 50px;
+    }
+
+    .container-contact h1 {
+        font-size: 36px; /* Smaller font size for smaller screens */
+        padding-left: 20px; /* Adjust padding */
+        padding-top: 120px; /* Adjust padding */
+        text-align: center; /* Center align heading */
+    }
+
+    .container-contact p {
+        padding: 10px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .container-sect h2 {
+        padding-left: 0; /* Remove left padding for smaller screens */
+    }
+
+    .contact-div {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center align items */
+        width: 75%;
+    }
+
+    .cont-img {
+        width: 80%; /* Adjust image width */
+        padding-left: 0; /* Remove left padding */
+    }
+}

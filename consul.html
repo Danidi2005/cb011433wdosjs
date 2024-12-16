@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>consultation</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16 (1)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16 (1)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16 (1)/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="favicon_package_v0.16 (1)" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!--header section-->
+    <header class="main-header">
+        <!--logo-->
+        <img src="image/logo.jpg" alt="logo" id="logo">
+
+         <!--Hamburger Menu-->
+         <input type="checkbox" id="menu-toggle" class="menu-toggle">
+         <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <!--Navigation section-->
+        <nav>
+           <a href="index.html">Home</a>
+           <a href="about.html">About Us</a>
+           <a href="service.html">Services</a>
+           <a href="doctors.html">Doctors</a>
+           <a href="consul.html">Consulting & Reservation</a>
+           <a href="pharmacy.html">Pharmacy</a>
+           <a href="contactus.html">ContactUs</a>
+        </nav>
+           
+    </header>
+    <main>
+        <div class="container-consulting">
+            <h1>Consulting & Reservation</h1>
+            <p>At Unity Hospital, we prioritize your health and convenience. To book a consultation or reserve an appointment with<br> our experienced medical professionals, kindly fill out the form below.<br> Our hospital will get in touch with you to confirm your appointment and provide further assistance.
+
+            </p>
+        </div>
+        <div class="container-conform">
+        <form action="/submit_reservation" method="post" id="consultingForm">
+            <fieldset>
+                <legend>Consulting & Reservation</legend>
+                
+                <!-- Patient Information -->
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name" required><br><br>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+                
+                <label for="contact_number">Contact Number:</label>
+                <input type="tel" id="contact_number" name="contact_number" maxlength="10" required><br><br>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <!-- Doctor Selection -->
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="Dr. Anura">Dr. Anura Perera - Cardiologist</option>
+                    <option value="Dr. Malini">Dr. Malini Fernando - Neurologist</option>
+                    <option value="Dr. Lakmal">Dr. Lakmal Wijesinghe - Pediatrician</option>
+                    <option value="Dr. Nimal">Dr. Nimal De Silva - Orthopedic Surgeon</option>
+                    <option value="Dr. Ruwanthi">Dr. Ruwanthi Jayawardena - General Physician</option>
+                    <option value="Dr. Harsha">Dr. Harsha Abeysekera - Dermatologist</option>
+                    <!-- Add more doctors as needed -->
+                </select><br><br>
+                
+                <!-- Appointment Date & Time -->
+                <label for="appointment_date">Preferred Appointment Date:</label>
+                <input type="date" id="appointment_date" name="appointment_date" required><br><br>
+                
+                <label for="appointment_time">Preferred Appointment Time:</label>
+                <input type="time" id="appointment_time" name="appointment_time" required><br><br>
+                
+                <!-- Additional Information -->
+                <label for="additional_info">Additional Information:</label>
+                <textarea id="additional_info" name="additional_info" placeholder="Any specific concerns or symptoms?"></textarea><br><br>
+                
+                <!-- Submit Button -->
+                <button type="submit">Reserve Appointment</button>
+            </fieldset>
+        </form>
+        </div>
+        
+    </main>
+    <footer>
+        <div>
+            <img src="image/logo.jpg" alt="footer-logo" class="foot-logo">
+        </div>
+         <div>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="image/icons8-instagram-48.png" alt="instargram" class="inst">
+            </a>
+            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">
+                <img src="image/icons8-facebook-48.png" alt="facebook" class="face">
+            </a>
+            <a href="https://www.linkedin.com/learning-login/" target="_blank">
+                <img src="image/icons8-linked-in-48.png" alt="linkedin" class="linkd">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="image/icons8-youtube-48.png" alt="Youtube" class="yout">
+            </a>
+         </div>
+         
+        
+         <div>
+            
+            <ul type="none">
+                <li> <h3>NETWORK CONTACT</h3></li>
+                <li>Unity Colombo :+94 11 455 6759</li>
+                <li>Unity Kandy    : +94 11 778 8759</li>
+                <li>Unity Matara   : +94 11 678 9759</li>
+                
+            </ul>
+         </div>
+    </footer>
+    
+    
+</body>
+</html>
+
+<!---references
+Tockcake.com (no date) Tockcake. Available at: https://tockcake.com/?utm_source=google&utm_medium=cpc&utm_campaign=homepage&gad_source=1&gclid=CjwKCAjwooq3BhB3EiwAY (Accessed: 5 September 2024).
+
+Unsplash (no date) Unsplash. Available at: https://unsplash.com/ (Accessed: 5 September 2024).
+
+W3Schools (no date) W3Schools. Available at: https://www.w3schools.com/ (Accessed: 1 September 2024).-->

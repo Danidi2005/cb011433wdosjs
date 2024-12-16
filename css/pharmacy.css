@@ -1,0 +1,266 @@
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.medicine-category {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.medicine {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.medicine img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/*.medicine-category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.medicine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33.33% - 20px); /* Ensures 3 items fit in one row 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.medicine img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.medicine p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.medicine input.quantity {
+    margin: 10px 0;
+    width: 60px;
+    text-align: center;
+}
+
+.medicine button.add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.medicine button.add-to-cart:hover {
+    background-color: #0056b3;
+}*/
+.medicine-category {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 20px; /* Space between items */
+}
+
+.medicine-category h2 {
+    grid-column: 1 / -1; /* Makes the heading span the entire width */
+    margin-bottom: 20px; /* Adds spacing below the heading */
+    text-align: center; /* Centers the heading text */
+}
+
+.medicine-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.medicine-item img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.medicine-item p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.medicine-item input.quantity {
+    margin: 10px 0;
+    width: 60px;
+    text-align: center;
+}
+
+.medicine-item button.add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.medicine-item button.add-to-cart:hover {
+    background-color: #0056b3;
+}
+/* Cart Table Styles */
+#cart {
+    margin-top: 2rem;
+}
+
+#cart h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #0056b3;
+}
+
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+#cart-table th, #cart-table td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#cart-table th {
+    background-color: #0056b3;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#cart-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+#cart-table tbody tr:nth-child(even) {
+    background-color: #e9f7ef;
+}
+
+#cart-table tfoot td {
+    font-weight: bold;
+    text-align: right;
+    color: #333;
+}
+
+#grand-total {
+    color: #0056b3;
+    font-size: 1.5rem;
+}
+
+/* Cart Buttons */
+#cart button {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #0056b3, #5179a4);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+#cart button:hover {
+    background: linear-gradient(135deg, #0056b3, #75abe4);
+    transform: scale(1.05);
+}
+
+#cart {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    #cart-table {
+        font-size: 0.85rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.75rem;
+    }
+}
+
+

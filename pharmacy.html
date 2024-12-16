@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pharmacy</title>
+    <!--<link href="../css/style.css" rel="stylesheet">-->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/pharmacy.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16 (1)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16 (1)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16 (1)/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="favicon_package_v0.16 (1)" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!--header section-->
+    <header class="main-header">
+        <!--logo-->
+        <img src="image/logo.jpg" alt="logo" id="logo">
+
+         <!--Hamburger Menu-->
+         <input type="checkbox" id="menu-toggle" class="menu-toggle">
+         <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <!--Navigation section-->
+        <nav>
+           <a href="index.html">Home</a>
+           <a href="about.html">About Us</a>
+           <a href="service.html">Services</a>
+           <a href="doctors.html">Doctors</a>
+           <a href="consul.html">Consulting & Reservation</a>
+           <a href="pharmacy.html">Pharmacy</a>
+           <a href="contactus.html">ContactUs</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <div class="container-pharmacy">
+            <h1>Pharmacy</h1>
+            <p>Our pharmacy team is dedicated to providing safe and reliable services to meet all your healthcare needs.</p>
+        </div>
+
+       <!-- Analgesics Section -->
+       <section class="medicine-category" id="analgesics">
+        <h2>Analgesics</h2>
+        <div class="medicine-item" data-name="Paracetamol" data-price="5">
+            <img src="image/paracetamol.webp" alt="Paracetamol">
+            <p class="medicine-name">Paracetamol</p>
+            <p class="medicine-price"  data-price="5">Price: $5</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Ibuprofen" data-price="8">
+            <img src="image/Ibuprofen.webp" alt="Ibuprofen">
+            <p class="medicine-name">Ibuprofen</p>
+            <p class="medicine-price" data-price="8">Price: $8</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Aspirin" data-price="6">
+            <img src="image/aspirin.webp" alt="Aspirin">
+            <p class="medicine-name">Aspirin</p>
+            <p class="medicine-price" data-price="6">Price: $6</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Codeine" data-price="12">
+            <img src="image/Codeine.webp" alt="Codeine">
+            <p class="medicine-name">Codeine</p>
+            <p class="medicine-price" data-price="12">Price: $12</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Tramadol" data-price="15">
+            <img src="image/Tramadol.webp" alt="Tramadol">
+            <p class="medicine-name">Tramadol</p>
+            <p class="medicine-price" data-price="15">Price: $15</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Diclofenac" data-price="9">
+            <img src="image/Diclofenac.webp" alt="Diclofenac">
+            <p class="medicine-name">Diclofenac</p>
+            <p class="medicine-price" data-price="9">Price: $9</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+    <!--Antibiotics section-->
+    <section class="medicine-category" id="antibiotics">
+        <h2>Antibiotics</h2>
+        <div class="medicine-item" data-name="Amoxicillin" data-price="10">
+            <img src="image/Amoxicillin.webp" alt="Amoxicillin">
+            <p class="medicine-name">Amoxicillin</p>
+            <p class="medicine-price" data-price="10">Price: $10</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Doxycycline" data-price="13">
+            <img src="image/Doxycycline.webp" alt="Doxycycline">
+            <p class="medicine-name">Doxycycline</p>
+            <p class="medicine-price" data-price="13">Price: $13</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Metronidazole" data-price="9">
+            <img src="image/Metronidazole.webp" alt="Metronidazole">
+            <p class="medicine-name">Metronidazole</p>
+            <p class="medicine-price" data-price="9">Price: $9</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Cephalexin" data-price="14">
+            <img src="image/Cephalexin.webp" alt="Cephalexin">
+            <p class="medicine-name">Cephalexin</p>
+            <p class="medicine-price" data-price="14">Price: $14</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Azithromycin" data-price="12">
+            <img src="image/Azithromycin.webp" alt="Azithromycin">
+            <p class="medicine-name">Azithromycin</p>
+            <p class="medicine-price" data-price="12">Price: $12</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Ciprofloxacin" data-price="11">
+            <img src="image/Ciprofloxacin.webp" alt="Ciprofloxacin">
+            <p class="medicine-name">Ciprofloxacin</p>
+            <p class="medicine-price" data-price="11">Price: $11</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+    <!--Antidepressant section-->
+    <section class="medicine-category" id="antidepressants">
+        <h2>Antidepressants</h2>
+        <div class="medicine-item" data-name="Fluoxetine" data-price="5">
+            <img src="image/Fluoxetine.webp" alt="Fluoxetine">
+            <p class="medicine-name">Fluoxetinel</p>
+            <p class="medicine-price" data-price="5">Price: $5</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Sertraline" data-price="5">
+            <img src="image/Sertraline.webp" alt="Sertraline">
+            <p class="medicine-name">Sertraline</p>
+            <p class="medicine-price" data-price="19">Price: $19</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Amitriptyline" data-price="5">
+            <img src="image/Amitriptyline.webp" alt="Amitriptyline">
+            <p class="medicine-name">Amitriptyline</p>
+            <p class="medicine-price" data-price="15">Price: $15</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Citalopram" data-price="5">
+            <img src="image/Citalopram.webp" alt="Citalopram">
+            <p class="medicine-name">Citalopram</p>
+            <p class="medicine-price"data-price="9">Price: $9</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Duloxetine" data-price="5">
+            <img src="image/Duloxetine.webp" alt="Duloxetine">
+            <p class="medicine-name">Duloxetine</p>
+            <p class="medicine-price" data-price="5">Price: $5</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Escitalopram" data-price="5">
+            <img src="image/Escitalopram.webp" alt="Escitalopram">
+            <p class="medicine-name">Escitalopram</p>
+            <p class="medicine-price" data-price="5">Price: $5</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+    <!--Antihistamines section-->
+    <section class="medicine-category" id="antihistamines">
+        <h2>Antihistamines</h2>
+        <div class="medicine-item" data-name="Loratadine" data-price="5">
+            <img src="image/Loratadine.webp" alt="Loratadine">
+            <p class="medicine-name">Loratadine</p>
+            <p class="medicine-price" data-price="12">Price: $12</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Cetirizine" data-price="5">
+            <img src="image/Cetirizine.webp" alt="Cetirizine">
+            <p class="medicine-name">Cetirizine</p>
+            <p class="medicine-price" data-price="10">Price: $10</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Diphenhydramine" data-price="5">
+            <img src="image/Diphenhydramine.webp" alt="Diphenhydramine">
+            <p class="medicine-name">Diphenhydramine</p>
+            <p class="medicine-price" data-price="15">Price: $15</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Fexofenadine" data-price="5">
+            <img src="image/fexofenadine.webp" alt="Fexofenadine">
+            <p class="medicine-name">Fexofenadine</p>
+            <p class="medicine-price" data-price="3">Price: $3</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+    <!--Antihypertensive section-->
+    <section class="medicine-category" id="antihypertensives">
+        <h2>Antihypertensives</h2>
+        <div class="medicine-item" data-name="Amlodipine" data-price="5">
+            <img src="image/Amlodipine.webp" alt="Amlodipine">
+            <p class="medicine-name">Amlodipine</p>
+            <p class="medicine-price" data-price="5">Price: $5</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Lisinopril" data-price="5">
+            <img src="image/Lisinopril.webp" alt="Lisinopril">
+            <p class="medicine-name">Lisinopril</p>
+            <p class="medicine-price" data-price="8">Price: $8</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Losartan" data-price="5">
+            <img src="image/Losartan.webp" alt="Losartan">
+            <p class="medicine-name">Losartan</p>
+            <p class="medicine-price" data-price="4">Price: $4</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Hydrochlorothiazide" data-price="5">
+            <img src="image/Hydrochlorothiazide.webp" alt="Hydrochlorothiazide">
+            <p class="medicine-name">Hydrochlorothiazide</p>
+            <p class="medicine-price" data-price="10">Price: $10</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Metoprolol" data-price="5">
+            <img src="image/Metoprolo.webp" alt="Metoprolol">
+            <p class="medicine-name">Metoprolol</p>
+            <p class="medicine-price" data-price="9">Price: $9</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="medicine-item" data-name="Clonidine" data-price="5">
+            <img src="image/Clonidine.webp" alt="Clonidine">
+            <p class="medicine-name">Clonidine</p>
+            <p class="medicine-price" data-price="7">Price: $7</p>
+            <input type="number" min="0" value="0" class="medicine-quantity">
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+
+    
+      <!-- Cart Table -->
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Unit Name</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Dynamically populated rows -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Grand Total</td>
+                    <td id="grand-total">$0</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+        <button id="add-to-favorites">Add to Favorites</button>
+        <button id="apply-favorites">Apply Favorites</button>
+        <button id="buy-now">Buy Now</button>
+    </section>
+</main>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div>
+            <img src="image/logo.jpg" alt="footer-logo" class="foot-logo">
+        </div>
+         <div>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="image/icons8-instagram-48.png" alt="instargram" class="inst">
+            </a>
+            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">
+                <img src="image/icons8-facebook-48.png" alt="facebook" class="face">
+            </a>
+            <a href="https://www.linkedin.com/learning-login/" target="_blank">
+                <img src="image/icons8-linked-in-48.png" alt="linkedin" class="linkd">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="image/icons8-youtube-48.png" alt="Youtube" class="yout">
+            </a>
+         </div>
+         
+        
+         <div>
+            
+            <ul type="none">
+                <li> <h3>NETWORK CONTACT</h3></li>
+                <li>Unity Colombo :+94 11 455 6759</li>
+                <li>Unity Kandy    : +94 11 778 8759</li>
+                <li>Unity Matara   : +94 11 678 9759</li>
+                
+            </ul>
+         </div>
+    </footer>
+    <script src="js/pharmacy.js" defer></script>
+   </body>
+</html>
+
+<!---references
+Tockcake.com (no date) Tockcake. Available at: https://tockcake.com/?utm_source=google&utm_medium=cpc&utm_campaign=homepage&gad_source=1&gclid=CjwKCAjwooq3BhB3EiwAY (Accessed: 5 September 2024).
+
+Unsplash (no date) Unsplash. Available at: https://unsplash.com/ (Accessed: 5 September 2024).
+
+W3Schools (no date) W3Schools. Available at: https://www.w3schools.com/ (Accessed: 1 September 2024).-->
